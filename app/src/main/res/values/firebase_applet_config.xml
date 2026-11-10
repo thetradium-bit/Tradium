@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <!-- Default Firestore database ID for tradium-11e9a standard production mode -->
+    <string name="firestore_database_id" translatable="false">(default)</string>
+    <!-- Optional placeholder for web client ID used by Credential Manager; configured via Google Services or console -->
+    <string name="default_web_client_id" translatable="false">905298917593-placeholder.apps.googleusercontent.com</string>
+    <string name="recaptcha_site_key" translatable="false">6LcZ7BUuAAAAANlvZFuxDqyyzEHQwVg03_jrkYKt</string>
+</resources>

@@ -1,0 +1,54 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User account profile and paper trading statistics",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "username": { "type": "string" },
+        "accountTier": { "type": "string" },
+        "virtualBalance": { "type": "number" },
+        "initialBalance": { "type": "number" },
+        "totalTrades": { "type": "number" },
+        "winRate": { "type": "number" },
+        "bestTradePnl": { "type": "number" },
+        "totalPnl": { "type": "number" },
+        "createdAt": { "type": "number" },
+        "updatedAt": { "type": "number" }
+      },
+      "required": ["userId", "email"]
+    },
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "Community trading chat room message",
+      "type": "object",
+      "properties": {
+        "senderId": { "type": "string" },
+        "senderName": { "type": "string" },
+        "senderBadge": { "type": "string" },
+        "avatarInitials": { "type": "string" },
+        "channel": { "type": "string" },
+        "content": { "type": "string" },
+        "signalTag": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "likesCount": { "type": "number" },
+        "isVerified": { "type": "boolean" }
+      },
+      "required": ["senderId", "senderName", "content", "channel"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile with private stats and trading portfolio"
+    },
+    "/chatRooms/{channel}/messages/{messageId}": {
+      "schema": "ChatMessage",
+      "description": "Public channel chat messages"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905298917593",
+    "project_id": "tradium-11e9a",
+    "storage_bucket": "tradium-11e9a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905298917593:android:1eb21af2661dd87741e6c8",
+        "android_client_info": {
+          "package_name": "com.aistudio.cryptosignal.kxmpzq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYqjVlJsHFiYzEVZ4ho6P7gtqObohMQBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

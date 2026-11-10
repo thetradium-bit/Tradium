@@ -1,0 +1,6 @@
+{
+  "name": "Tradium",
+  "description": "Crypto signaling, real-time AI chart pattern analysis, virtual paper trading, community alpha chat, and trader leaderboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
